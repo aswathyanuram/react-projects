@@ -6,10 +6,10 @@ import Counter from "../counter/Counter";
 import OuterCounter from "../counter2/OuterCounter";
 import Products from "../products/Products";
 import Inputs from "../controlledInputs/Inputs";
+import Light from "../light/Light";
+import Images from "../image/Images";
 
 export default function Dashboard() {
-  const [selectedTitle, setSelectedTitle] = useState([]);
-
   const changeApp = (title) => {
     setSelectedTitle(title);
   };
@@ -35,7 +35,20 @@ export default function Dashboard() {
       title: "Controlled Inputs",
       app: <Inputs />,
     },
+    {
+      id: 5,
+      title: "Lights",
+      app: <Light />,
+    },
+    {
+      id: 6,
+      title: "Images",
+      app: <Images />,
+    },
   ];
+
+  const [selectedTitle, setSelectedTitle] = useState(details?.[0]);
+
   return (
     <div className="dashboard">
       <Sidebar details={details} changeApp={changeApp} />

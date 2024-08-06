@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sora:wght@100..800&display=swap");
+
+body {
+  font-family: "Nunito";
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.lightContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+}
+.switch {
+  font-size: 3rem;
+  background-color: black;
+  color: #fefefe;
+  width: 50px;
+  margin-bottom: 1rem;
+  height: 50px;
+  box-shadow: -4px 4px 0px gray;
+}
+.switch:active {
+  transform: translate(-2px, 2px);
+}
+
+.lightOn {
+  background-color: yellow;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightOff {
+  background-color: black;
+  color: white;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
