@@ -33,6 +33,7 @@ body {
   max-height: 100vh;
   min-height: 100vh;
   overflow: scroll;
+
   background-color: #fdfdfd;
   flex: 1;
 }

@@ -8,6 +8,7 @@ export default function Sidebar({ details, changeApp }) {
         return (
           <div
             className="tabName"
+            key={detail.id}
             onClick={() => {
               changeApp(detail);
             }}

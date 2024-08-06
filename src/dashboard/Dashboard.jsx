@@ -8,6 +8,7 @@ import Products from "../products/Products";
 import Inputs from "../controlledInputs/Inputs";
 import Light from "../light/Light";
 import Images from "../image/Images";
+import Mails from "../mail/Mails";
 
 export default function Dashboard() {
   const changeApp = (title) => {
@@ -44,6 +45,11 @@ export default function Dashboard() {
       id: 6,
       title: "Images",
       app: <Images />,
+    },
+    {
+      id: 7,
+      title: "Mail",
+      app: <Mails />,
     },
   ];
 
